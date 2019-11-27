@@ -1,6 +1,6 @@
-# mzqs5 README
+# varCase README
 
-This is the README for your extension "mzqs5". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "varCase". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
