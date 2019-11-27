@@ -1,24 +1,47 @@
 {
-	"name": "mzqs5",
-	"displayName": "format-var",
-	"description": "format-var",
+	"name": "varCase",
+	"displayName": "Variable first letter case conversion",
+	"description": "Variable first letter case conversion",
+	"publisher": "mzqs5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mzqs5/vscode-var-case"
+  },
+  "icon": "icon.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
 	"categories": [
-		"Other"
+		"Formatters"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.toVarLowerCase",
+		"onCommand:extension.toVarUpperCase"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.toVarLowerCase",
+				"title": "首字母小写"
+			},
+			{
+				"command": "extension.toVarUpperCase",
+				"title": "首字母大写"
 			}
+		],
+		"keybindings": [
+			{
+			  "command": "extension.toVarLowerCase",
+			  "key": "alt+i",
+			  "when": "editorHasSelection"
+			},
+			{
+				"command": "extension.toVarUpperCase",
+				"key": "alt+u",
+				"when": "editorHasSelection"
+			  }
 		]
 	},
 	"scripts": {
