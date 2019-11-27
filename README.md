@@ -1,7 +1,9 @@
-# varCase README
+# Var Case README
 
 Variable first letter case conversion.
 
-## Features
+Shortcut keys alt+i first letter to lowercase.
+
+Shortcut keys alt+u first letter to uppercase
 
 -----------------------------------------------------------------------------------------------------------
